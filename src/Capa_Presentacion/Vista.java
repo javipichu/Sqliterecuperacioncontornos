@@ -348,7 +348,7 @@ int i = jtable_producto.getSelectedRow();
         */
         
         DatosTabla();
-     
+        System.out.println("Actualizado!!");
         
         
     }//GEN-LAST:event_btn_actualizarActionPerformed

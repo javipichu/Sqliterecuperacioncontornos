@@ -30,8 +30,8 @@ public class conexion {
             
             if (cn!= null){
                 DatabaseMetaData meta =cn.getMetaData();
-                System.out.println("Driver" + meta.getDriverName());
-                System.out.println("Conexion realizada con exito");
+              
+                System.out.println("Conectado");
                 
             }
                 
