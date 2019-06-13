@@ -18,8 +18,6 @@ import Capa_conexion.conexion;
 /**
  * Case operaciones, donde declaro todos los metodos
  * @author javi
- * @param value boolean en cada metodo de la tabla
- * @return tab retornamos la variable tab
  * @version 2.1
  */
 public class operaciones {

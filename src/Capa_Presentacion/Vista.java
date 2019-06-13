@@ -327,7 +327,7 @@ int i = jtable_producto.getSelectedRow();
 
     private void btn_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminarActionPerformed
    /*
-        * LLAMAMOS AL METODO ELIMINAR
+        * LLAMAMOS AL METODO ELIMINAR.
         */
    
    Eliminar();

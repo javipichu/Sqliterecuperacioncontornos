@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
 public class conexion {
     //creamos la clase conexion
     static Connection cn = null;
-    //creamos la conexion
+    //creamos la conexion.
     public static Connection Enlace(Connection cn)throws SQLException, ClassNotFoundException{
         //ruta de la base de datos que creamos 
         String ruta="/home/local/DANIELCASTELAO/jalvarezotero/Escritorio/pruebaProyectoBD/BDproducto.db";
