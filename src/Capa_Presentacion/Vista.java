@@ -15,8 +15,9 @@ import javax.swing.table.DefaultTableModel;
 import capa_operaciones.operaciones;
 
 /**
- *clase principal, donde tengo mi jFrame, llamo a las otras clases importando los paquetes necesarios 
+ * clase principal, donde tengo mi jFrame, llamo a las otras clases importando los paquetes necesarios 
  * @author javi
+ * @version 2.1
  */
 public class Vista extends javax.swing.JFrame {
 //variables
@@ -51,9 +52,9 @@ public class Vista extends javax.swing.JFrame {
         System.out.println("Agregado correctamente");
        
     }
-    /* 
+    /** 
     *METODO PARA ELIMINAR DATOS
-    */
+    **/
     public void Eliminar(){
         operaciones oper=new operaciones();
         oper.EliminarConsulta(jtxt_id.getText());

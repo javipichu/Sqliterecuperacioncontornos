@@ -8,14 +8,15 @@ package Capa_Presentacion.Parte2;
 import Capa_Presentacion.Vista;
 
 /**
- *
- * @author jalvarezotero
+ * Creo una segunda tabla, agena a la base de datos, que indica el lugar de destino de los productos dentro de la base
+ * @version 2.1
+ * @author javi
  */
 public class Tabla2 extends javax.swing.JFrame {
 
     /**
      * Creo una segunda tabla, agena a la base de datos, que indica el lugar de destino de los productos dentro de la base
-     * 
+     *  @version 2.1
      */
     public Tabla2() {
         initComponents();

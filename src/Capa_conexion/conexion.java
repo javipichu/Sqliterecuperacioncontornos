@@ -12,9 +12,10 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 /**
- * Metodo conexion, donde me conecto con la base de datos que he creado fuera del programa, donde tambien he hecho directamente el create table dentro de ese programa(SQLITE SHELL)
- * 
+ * Metodo conexion, donde me conecto con la base de datos que he creado fuera del programa, 
+ * donde tambien he hecho directamente el create table dentro de ese programa(SQLITE SHELL)
  * @author javi
+ * @version 2.1
  */
 public class conexion {
     //creamos la clase conexion

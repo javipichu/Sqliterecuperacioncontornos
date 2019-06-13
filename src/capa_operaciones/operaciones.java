@@ -14,13 +14,13 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 // importamos el paquete de conexion
 import Capa_conexion.conexion;
-import java.awt.HeadlessException;
-import java.sql.SQLException;
 
 /**
  * Case operaciones, donde declaro todos los metodos
- *
  * @author javi
+ * @param value boolean en cada metodo de la tabla
+ * @return tab retornamos la variable tab
+ * @version 2.1
  */
 public class operaciones {
 
@@ -75,6 +75,7 @@ public class operaciones {
             s.close();
             cn.close();
             JOptionPane.showMessageDialog(null, "Agregado Correctamente");
+           JOptionPane.showMessageDialog(null, "Agregado 1 Columna ");// solo se puede hacer de una en una
             tab=true;
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error al agregar la consulta");
@@ -86,16 +87,22 @@ public class operaciones {
     //CREAMOS METODO PARA ELIMINAR DATOS
 
     public static boolean EliminarConsulta(String id) {
+      
         boolean tab=false;
-        try {
+        try {// si es true borraria la columna que quisieramos
+            //devuelve el numero de columnas eliminadas 
+            
             Statement s = cn.createStatement();
             String query = "DELETE FROM producto WHERE id=" + id + "";
             s.executeUpdate(query);
             s.close();
             cn.close();
             JOptionPane.showMessageDialog(null, "Eliminado Correctamente");
+            JOptionPane.showMessageDialog(null, "1 Columna eliminada");// solo se puede hacer de una en una
            tab=true;
         } catch (Exception e) {
+            //si devuelve false saltaria el error con su mensaje
+            //lo mismo en los demas metodos
             JOptionPane.showMessageDialog(null, "Error al eliminar una consulta, Prueba otra vez");
             return tab=false;
         
@@ -113,6 +120,7 @@ public class operaciones {
             s.close();
             cn.close();
             JOptionPane.showMessageDialog(null, "Modificado correctamente");
+            JOptionPane.showMessageDialog(null, " 1 Columna modificada ");
             tab=true;
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "No se ha modificado la consulta, algo está mal....");
